@@ -1,0 +1,94 @@
+<h5 id="description" style="text-align: center;">Description</h5>
+
+<p>A real coffee machine doesn't have an infinite supply of water, milk, or coffee beans. And if you need a lot of coffee, it's almost certain that you will have to replenish the supplies sooner or later.</p>
+
+<p>In this stage, you need to improve the program from the previous stage. Now, you will check how much water, milk, and coffee beans are available for your coffee machine at the moment.</p>
+
+<h5 id="objectives" style="text-align: center;">Objectives</h5>
+
+<p>Write a program that does the following:</p>
+
+<ol>
+	<li>It requests the amounts of water, milk, and coffee beans available at the moment and then asks for the number of required coffee cups;</li>
+	<li>If the coffee machine has the supplies to make enough coffee, the program should print the following: <code class="java">Yes, I can make that amount of coffee</code>.</li>
+	<li>If the coffee machine can make more than that, the program should output <code class="java">Yes, I can make that amount of coffee (and even N more than that)</code>, where <code class="java">N</code> is the number of extra cups.</li>
+	<li>If you're running short, the program should output <code class="java">No, I can make only N cups of coffee</code>.</li>
+</ol>
+
+<p>Like in the previous stage, the coffee machine needs 200 ml of water, 50 ml of milk, and 15 <em>g</em> of coffee beans for one cup.</p>
+
+<h5 id="examples" style="text-align: center;">Examples</h5>
+
+<p>The greater-than symbol followed by a space (<code class="java">&gt; </code>) represents the user input. Note that it's not part of the input.</p>
+
+<p><strong>Example 1: </strong><em>the right amount</em></p>
+
+<pre><code class="language-no-highlight">Write how many ml of water the coffee machine has:
+&gt; 300
+Write how many ml of milk the coffee machine has:
+&gt; 65
+Write how many grams of coffee beans the coffee machine has:
+&gt; 100
+Write how many cups of coffee you will need:
+&gt; 1
+Yes, I can make that amount of coffee</code></pre>
+
+<p><strong>Example 2: </strong><em>not enough supplies</em></p>
+
+<pre><code class="language-no-highlight">Write how many ml of water the coffee machine has:
+&gt; 500
+Write how many ml of milk the coffee machine has:
+&gt; 250
+Write how many grams of coffee beans the coffee machine has:
+&gt; 200
+Write how many cups of coffee you will need:
+&gt; 10
+No, I can make only 2 cups of coffee</code></pre>
+
+<p><strong>Example 3: </strong><em>extra cups</em></p>
+
+<pre><code class="language-no-highlight">Write how many ml of water the coffee machine has:
+&gt; 1550
+Write how many ml of milk the coffee machine has:
+&gt; 299
+Write how many grams of coffee beans the coffee machine has:
+&gt; 300
+Write how many cups of coffee you will need:
+&gt; 3
+Yes, I can make that amount of coffee (and even 2 more than that)</code></pre>
+
+<p><strong>Example 4: </strong><em>an</em><strong> </strong><em>empty stock</em></p>
+
+<pre><code class="language-no-highlight">Write how many ml of water the coffee machine has:
+&gt; 0
+Write how many ml of milk the coffee machine has:
+&gt; 0
+Write how many grams of coffee beans the coffee machine has:
+&gt; 0
+Write how many cups of coffee you will need:
+&gt; 1
+No, I can make only 0 cups of coffee</code></pre>
+
+<p><strong>Example 5: </strong><em>a</em><strong> </strong><em>zero case</em></p>
+
+<pre><code class="language-no-highlight">Write how many ml of water the coffee machine has:
+&gt; 0
+Write how many ml of milk the coffee machine has:
+&gt; 0
+Write how many grams of coffee beans the coffee machine has:
+&gt; 0
+Write how many cups of coffee you will need:
+&gt; 0
+Yes, I can make that amount of coffee </code></pre>
+
+<p><strong>Example 6: </strong><em>extra cups</em></p>
+
+<pre><code class="language-no-highlight">Write how many ml of water the coffee machine has:
+&gt; 200
+Write how many ml of milk the coffee machine has:
+&gt; 50
+Write how many grams of coffee beans the coffee machine has:
+&gt; 15
+Write how many cups of coffee you will need:
+&gt; 0
+Yes, I can make that amount of coffee (and even 1 more than that)</code></pre>

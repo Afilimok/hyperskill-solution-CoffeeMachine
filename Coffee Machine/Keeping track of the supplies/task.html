@@ -1,0 +1,110 @@
+<h5 id="description" style="text-align: center;">Description</h5>
+
+<p>We can carry on and make things more interesting, can't we? Let's improve the program so it can do multiple actions, one after another. It must repeatedly ask users what they want to do. Users can input either <code class="java">buy</code>, <code class="java">fill</code>, or <code class="java">take</code>, and then the program does the same thing it did in the previous step. However, if users want to turn off the coffee machine, they should type in <code class="java">exit</code>. The program terminates after this command. Also, when users type in <code class="java">remaining</code>, the program should output all coffee machine resources. This means that you shouldn't show the remaining stock levels at the beginning/end of the program.</p>
+
+<h5 id="objectives" style="text-align: center;">Objectives</h5>
+
+<p>Write a program that continuously makes coffee for everyone until the shutdown command is provided. Introduce two new options: <code class="java">remaining</code> and <code class="java">exit</code>.</p>
+
+<p>Do not forget that you can overstretch your supplies while making coffee. If the coffee machine doesn't have enough resources to make coffee, the program should output a message saying that it can't make it anymore and state what is missing.</p>
+
+<p>And the last improvement to the program at this step — if users enter <code class="java">buy</code> to buy a cup of coffee but change their mind afterward, allow them to input <code class="java">back</code> to return to the main menu.</p>
+
+<p>Set the following initial supplies: 400 ml of water, 540 ml of milk, 120 g of coffee beans, 9 disposable cups, $550.</p>
+
+<h5 id="example" style="text-align: center;">Example</h5>
+
+<p>The greater-than symbol followed by a space (<code class="java">&gt; </code>) represents the user input. Note that it's not part of the input.</p>
+
+<p><strong>Example 1: </strong><em>the program operations</em></p>
+
+<pre><code class="language-no-highlight">Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+400 ml of water
+540 ml of milk
+120 g of coffee beans
+9 disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:
+&gt; 2
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+50 ml of water
+465 ml of milk
+100 g of coffee beans
+8 disposable cups
+$557 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:
+&gt; 2
+Sorry, not enough water!
+
+Write action (buy, fill, take, remaining, exit):
+&gt; fill
+
+Write how many ml of water do you want to add:
+&gt; 1000
+Write how many ml of milk do you want to add:
+&gt; 0
+Write how many grams of coffee beans do you want to add:
+&gt; 0
+Write how many disposable cups of coffee do you want to add:
+&gt; 0
+
+Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+1050 ml of water
+465 ml of milk
+100 g of coffee beans
+8 disposable cups
+$557 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:
+&gt; 2
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+700 ml of water
+390 ml of milk
+80 g of coffee beans
+7  disposable cups
+$564 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; take
+
+I gave you $564
+
+Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+700 ml of water
+390 ml of milk
+80 g of coffee beans
+7 disposable cups
+$0 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; exit</code></pre>
